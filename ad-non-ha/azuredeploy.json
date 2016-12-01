@@ -14,7 +14,7 @@
             "metadata": {
                 "description": "The name of the Administrator of the new VMs and Domain"
             },
-            "defaultValue": "vmadmin"
+            "defaultValue": "Admin001"
         },
         "adminPassword": {
             "type": "securestring",
@@ -25,11 +25,11 @@
         }
     },
     "variables": {
-        "assetLocation": "https://raw.githubusercontent.com/Azure/AzureStack-QuickStart-Templates/master/ad-non-ha",
-        "adVMSize": "Standard_A1",
-        "vmNetworkSubnet": "10.0.0.0/24",
-        "virtualNetworkAddressRange": "10.0.0.0/16",
-        "primaryAdIpAddress": "10.0.0.4",
+        "assetLocation": "https://github.com/acauret/AzureStack-QuickStart-Templates/tree/master/ad-non-ha",
+        "adVMSize": "Standard_A2",
+        "vmNetworkSubnet": "28.33.190.0/24",
+        "virtualNetworkAddressRange": "28.33.0.0/16",
+        "primaryAdIpAddress": "28.33.190.4",
         "storageAccountType": "Standard_LRS",
         "adTemplateURL": "[concat(variables('assetLocation'),'/adVmTemplate.json')]",
         "adStorageName": "[tolower(concat('adsa',resourceGroup().name))]",
