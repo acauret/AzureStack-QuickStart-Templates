@@ -55,7 +55,7 @@
         "nsgID": "[resourceId('Microsoft.Network/networkSecurityGroups',variables('nsgName'))]",
         "adNICName": "[concat('ADNic',resourceGroup().name)]",
         "staticSubnetName": "[concat('ADStaticSubnet',resourceGroup().name)]",
-        "virtualNetworkName": "[concat('vNET',resourceGroup().name)]",
+        "virtualNetworkName": "[concat('vNET-',resourceGroup().name)]",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
         "staticSubnetID": "[concat(variables('vnetID'),'/subnets/',variables('staticSubnetName'))]",
         "subnets": [
