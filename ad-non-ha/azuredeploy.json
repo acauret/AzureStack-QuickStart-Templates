@@ -25,7 +25,7 @@
         }
     },
     "variables": {
-        "assetLocation": "https://raw.githubusercontent.com/acauret/AzureStack-QuickStart-Templates/master/ad-non-ha/",
+        "assetLocation": "https://raw.githubusercontent.com/acauret/AzureStack-QuickStart-Templates/master/ad-non-ha",
         "adVMSize": "Standard_A2",
         "vmNetworkSubnet": "28.33.190.0/24",
         "virtualNetworkAddressRange": "28.33.0.0/16",
