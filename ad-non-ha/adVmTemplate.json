@@ -7,7 +7,7 @@
             "metadata": {
                 "description": "The Publisher of Windows Image"
             },
-            "defaultValue": "Microsoft"
+            "defaultValue": "MicrosoftWindowsServer"
         },
         "windowsImageOffer": {
             "type": "string",
@@ -21,7 +21,7 @@
             "metadata": {
                 "description": "The SKU Name of Windows Image"
             },
-            "defaultValue": "2016-Core"
+            "defaultValue": "2012-R2-Datacenter"
         },
         "windowsImageVersion": {
             "type": "string",
