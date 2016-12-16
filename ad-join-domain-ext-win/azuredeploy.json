@@ -7,7 +7,7 @@
             "metadata": {
                 "description": "Name of the Virtual Machine to be created"
             },
-            "defaultValue": "[substring(concat('simplewinvm',resourceGroup().Name),0,12)]"
+            "defaultValue": ""
         },
         "adminUsername": {
             "type": "string",
@@ -21,35 +21,35 @@
             "metadata": {
                 "description": "Password for the Virtual Machine local administrator. Default value is subscription id"
             },
-            "defaultValue": "[concat('Subscription#',substring(resourcegroup().id,15,36))]"
+            "defaultValue": ""
         },
         "dcResourceGroupName": {
             "type": "string",
             "metadata": {
                 "description": "Name of the resource group that cointains the domain controller"
             },
-            "defaultValue": "[resourceGroup().name]"
+            "defaultValue": "Dev"
         },
         "dcVNetName": {
             "type": "string",
             "metadata": {
                 "description": "Name of the extisting VNet that contains the domain controller"
             },
-            "defaultValue": "[concat('ADVNET',resourceGroup().name)]"
+            "defaultValue": "vnet-dev"
         },
         "dcSubnetName": {
             "type": "string",
             "metadata": {
                 "description": "Name of the existing subnet that contains the domain controller"
             },
-            "defaultValue": "[concat('ADStaticSubnet',resourceGroup().name)]"
+            "defaultValue": "ADStaticSubnetDev"
         },
         "domainToJoin": {
             "type": "string",
             "metadata": {
                 "description": "FQDN of the AD domain to join"
             },
-            "defaultValue": "contoso.com"
+            "defaultValue": "dev.local"
         },
         "ouToJoin": {
             "type": "string",
@@ -70,14 +70,14 @@
             "metadata": {
                 "description": "Username of the domain account to be used for joining the domain"
             },
-            "defaultValue": "vmadmin"
+            "defaultValue": "Admin001"
         },
         "domainPassword": {
             "type": "securestring",
             "metadata": {
                 "description": "Password of the domain account to be used for joining the domain"
             },
-            "defaultValue": "[concat('Subscription#',subscription().subscriptionId)]"
+            "defaultValue": ""
         }
     },
     "variables": {
