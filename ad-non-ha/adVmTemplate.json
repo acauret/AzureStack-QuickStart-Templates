@@ -17,7 +17,7 @@
             "defaultValue": "WindowsServer"
         },
         "windowsImageSKU": {
-            "defaultValue": "2012-R2-Datacenter",
+            "defaultValue": "2016-DataCenter",
             "allowedValues": [
                 "2012-R2-Datacenter",
                 "2016-DataCenter"
@@ -25,7 +25,7 @@
             "type": "string",
             "metadata": {
                 "description": "The SKU Name of Windows Image"
-            },
+            }
         },
         "windowsImageVersion": {
             "type": "string",
